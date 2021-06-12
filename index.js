@@ -22,7 +22,7 @@ app.use("/customer/data",userrouter);
 // });
 
 const port = process.env.PORT || 3338;
-server.listen(port, () => {
+app.listen(port, () => {
   console.log(`Listening on http://localhost:${port}/`);
 });
 
