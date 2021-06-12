@@ -21,9 +21,7 @@ app.use("/customer/data",userrouter);
 
 
 
-const PORT = process.env.$PORT || 80;
-var server = app.listen(process.env.$PORT, function() {
-    var host = server.address().address;
-    var port = server.address().port;
-    console.log("server is running at http://%s", process.env.$PORT);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
 });
