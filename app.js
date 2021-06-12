@@ -22,7 +22,7 @@ app.use("/customer/data",userrouter);
 
 
 const PORT = process.env.$PORT || 80;
-var server = app.listen(PORT, function() {
+var server = app.listen(process.env.$PORT, function() {
     var host = server.address().address;
     var port = server.address().port;
     console.log("server is listening at http://%s:%s", host, port);
