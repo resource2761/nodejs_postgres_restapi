@@ -21,9 +21,9 @@ app.use("/customer/data",userrouter);
 
 
 
-const PORT = process.env.$PORT || 80;
+const PORT = process.env.$PORT || 80; // $PORT heroku global port variable
 var server = app.listen(process.env.$PORT, function() {
     var host = server.address().address;
     var port = server.address().port;
-    console.log("server is listening at http://%s:%s", host, port);
+    console.log("server is running at http://",process.env.$PORT);
 });
