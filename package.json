@@ -2,10 +2,10 @@
   "name": "node_express_mysql_practice",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "app.js"
+    "start": "index.js"
   },
   "author": "",
   "license": "ISC",
