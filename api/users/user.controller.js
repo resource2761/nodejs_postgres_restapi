@@ -86,7 +86,7 @@ module.exports =
                     });
                 }
 
-                
+
                 const result = compareSync(body.password, results.rows[0].password);
                 if (result) {
                     results.rows[0].password = undefined;
@@ -112,8 +112,8 @@ module.exports =
 
         findcustomer: (req, res) => {
             const body = req.body;
-            console.log("from controller:",body)
-            
+            console.log("from controller:", body)
+
             //findCustomerByEmail service
             findCustomerByEmail(body, (err, results) => {
                 if (err) {
@@ -131,8 +131,8 @@ module.exports =
                     return res.json({
                         success: 1,
                         message: "Customer Founded",
-                        data:results.rows[0].name 
-                        
+                        data: results.rows[0].name
+
                     });
                 } else {
                     return res.json({
