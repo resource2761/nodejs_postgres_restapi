@@ -11,16 +11,10 @@ const userrouter=require("./api/users/user.router");
 app.use(express.json());
 
 // define the router begin path as /customer/data
-app.use("/customer/data",userrouter);
+//app.use("/customer/data",userrouter);
+
+app.set("/customer/data",userrouter);
  
-//const PORT = process.env.PORT || 3000;
-// use .env from process.env
-// app.listen(PORT, () => {
-//     console.log(`server is running on port ${PORT}`);
-// })
-
-
-
 // const PORT = process.env.PORT || 3000;
 // app.listen(PORT, () => {
 //   console.log(`Server is running on port ${PORT}`);
