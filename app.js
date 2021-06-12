@@ -13,8 +13,8 @@ app.use(express.json());
 // define the router begin path as /customer/data
 app.use("/customer/data",userrouter);
  
-
+const PORT = process.env.PORT || 3000;
 // use .env from process.env
-app.listen(process.env.app_port, () => {
-    console.log('server is running on port', process.env.app_port);
+app.listen(PORT, () => {
+    console.log(`server is running on port ${PORT}`);
 })
